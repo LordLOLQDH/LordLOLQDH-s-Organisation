@@ -6,6 +6,10 @@
   <title>LordLOLQDH Organisation</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -18,10 +22,11 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(15, 23, 42, 0.9);
+      background: rgba(15, 23, 42, 0.95);
       backdrop-filter: blur(10px);
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 15px 25px;
       z-index: 1000;
     }
@@ -38,7 +43,7 @@
     }
 
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,13 +54,13 @@
     }
 
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin: 0;
     }
 
     .hero p {
-      font-size: 1.2rem;
       max-width: 700px;
+      font-size: 1.2rem;
       opacity: 0.95;
     }
 
@@ -67,6 +72,7 @@
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      display: inline-block;
     }
 
     section {
@@ -87,15 +93,22 @@
       margin-top: 15px;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
     a {
       color: #38bdf8;
-      text-decoration: none;
     }
 
     footer {
       text-align: center;
       padding: 30px;
       opacity: 0.5;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -116,9 +129,10 @@
 <div class="hero">
   <h1>LordLOLQDH Organisation</h1>
   <p>
-    Eine moderne Entwicklerorganisation mit Fokus auf saubere Software,
-    klare Struktur und nachhaltige Projekte.
+    Eine Entwicklerorganisation mit Fokus auf saubere Software, klare Struktur
+    und moderne Webprojekte.
   </p>
+
   <a class="btn" href="https://github.com/LordLOLQDH" target="_blank">
     GitHub Organisation öffnen
   </a>
@@ -126,28 +140,23 @@
 
 <!-- ABOUT -->
 <section id="about">
-  <h2>📌 Über die Organisation</h2>
+  <h2>📌 Über uns</h2>
 
   <div class="card">
     <p>
-      Die <b>LordLOLQDH Organisation</b> ist eine kleine, unabhängige Entwicklergruppe,
-      die sich auf moderne Softwareentwicklung, sauberen Code und gut strukturierte Projekte konzentriert.
-      Unser Ziel ist es, nicht einfach nur Code zu schreiben, sondern stabile, verständliche und langfristig wartbare Systeme zu entwickeln.
+      Die <b>LordLOLQDH Organisation</b> ist eine kleine Entwicklergruppe, die
+      sich auf moderne Softwareentwicklung konzentriert.
+      Ziel ist es, sauberen, verständlichen und gut strukturierten Code zu schreiben.
     </p>
 
     <p>
-      Wir arbeiten projektbasiert und legen großen Wert auf klare Architektur, einfache Zusammenarbeit und nachvollziehbare Entwicklungsprozesse.
-      Jedes Projekt in unserer Organisation folgt denselben Grundprinzipien: Übersichtlichkeit, Effizienz und Erweiterbarkeit.
+      Wir arbeiten an Webprojekten, Backend-Systemen und Tools.
+      Jedes Projekt wird so aufgebaut, dass es leicht verständlich und erweiterbar ist.
     </p>
 
     <p>
-      Dabei ist es egal, ob es sich um Webanwendungen, Backend-Systeme oder kleine Tools handelt – jedes Projekt soll einen echten Zweck erfüllen
-      und einen Mehrwert bieten. Besonders wichtig ist uns, dass auch Anfänger verstehen können, wie unsere Projekte aufgebaut sind.
-    </p>
-
-    <p>
-      Die Organisation wächst stetig weiter. Neue Ideen, neue Mitglieder und neue Technologien werden regelmäßig integriert.
-      Ziel ist es, eine langfristige Entwicklungsumgebung aufzubauen, die sowohl Lernplattform als auch Produktionsumgebung sein kann.
+      Unser Fokus liegt auf Qualität statt Chaos:
+      klare Struktur, einfache Zusammenarbeit und nachhaltige Entwicklung.
     </p>
   </div>
 </section>
@@ -157,25 +166,20 @@
   <h2>🚀 Projekte</h2>
 
   <div class="card">
-    <p>
-      Unsere Projekte sind in verschiedene Bereiche aufgeteilt, um Übersicht und Struktur zu behalten:
-    </p>
+    <p>Unsere Projekte sind in klare Bereiche unterteilt:</p>
 
     <ul>
-      <li><b>Frontend Systeme</b> – moderne Benutzeroberflächen und Webdesigns</li>
-      <li><b>Backend APIs</b> – stabile Server- und Datenstrukturen</li>
-      <li><b>Tools & Utilities</b> – kleine Programme zur Automatisierung</li>
+      <li><b>Frontend</b> – Websites & UI Systeme</li>
+      <li><b>Backend</b> – APIs & Serverlogik</li>
+      <li><b>Tools</b> – kleine Entwickler-Tools</li>
     </ul>
 
     <p>
-      Jedes Projekt wird in klaren Repositories verwaltet und mit einer einheitlichen Struktur aufgebaut.
-      Dadurch bleibt die Organisation auch bei wachsender Größe übersichtlich und wartbar.
-    </p>
-
-    <p>
-      Du kannst alle aktuellen Projekte direkt auf unserer GitHub-Organisation einsehen:
-      <br><br>
-      👉 <a href="https://github.com/LordLOLQDH" target="_blank">github.com/LordLOLQDH</a>
+      Alle Projekte findest du auf unserer GitHub Organisation:
+      <br />
+      <a href="https://github.com/LordLOLQDH" target="_blank">
+        github.com/LordLOLQDH
+      </a>
     </p>
   </div>
 </section>
@@ -185,20 +189,13 @@
   <h2>📩 Kontakt</h2>
 
   <div class="card">
-    <p>
-      Wenn du Fragen, Vorschläge oder Interesse an einer Zusammenarbeit hast,
-      kannst du uns jederzeit kontaktieren.
-    </p>
+    <p>Für Anfragen oder Zusammenarbeit:</p>
 
     <p>
-      📧 E-Mail:
-      <a href="mailto:auron-team@proton.me">auron-team@proton.me</a>
+      📧 <a href="mailto:auron-team@proton.me">auron-team@proton.me</a>
     </p>
 
-    <p>
-      Wir antworten in der Regel zeitnah und sind offen für neue Ideen,
-      Kooperationen und Verbesserungen an bestehenden Projekten.
-    </p>
+    <p>Wir antworten normalerweise innerhalb kurzer Zeit.</p>
   </div>
 </section>
 
