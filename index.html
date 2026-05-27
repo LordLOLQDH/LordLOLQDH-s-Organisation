@@ -11,10 +11,9 @@
       font-family: Arial, sans-serif;
       background: #0b1220;
       color: white;
-      scroll-behavior: smooth;
+      line-height: 1.6;
     }
 
-    /* NAV */
     nav {
       position: fixed;
       top: 0;
@@ -23,7 +22,7 @@
       backdrop-filter: blur(10px);
       display: flex;
       justify-content: space-between;
-      padding: 15px 30px;
+      padding: 15px 25px;
       z-index: 1000;
     }
 
@@ -38,7 +37,6 @@
       opacity: 1;
     }
 
-    /* HERO */
     .hero {
       height: 100vh;
       display: flex;
@@ -47,6 +45,7 @@
       align-items: center;
       text-align: center;
       background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      padding: 20px;
     }
 
     .hero h1 {
@@ -56,57 +55,41 @@
 
     .hero p {
       font-size: 1.2rem;
-      opacity: 0.9;
+      max-width: 700px;
+      opacity: 0.95;
     }
 
     .btn {
       margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
+      padding: 12px 18px;
       background: white;
       color: black;
-      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
       font-weight: bold;
     }
 
-    /* SECTIONS */
     section {
-      padding: 80px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
+      padding: 80px 20px;
     }
 
     h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .card {
       background: #111a2e;
       padding: 20px;
       border-radius: 12px;
-      margin: 10px;
+      margin-top: 15px;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
-    }
-
-    /* CONTACT */
-    .contact {
-      text-align: center;
-      background: #0f172a;
-      padding: 50px;
-      border-radius: 12px;
-    }
-
-    .contact a {
+    a {
       color: #38bdf8;
       text-decoration: none;
-      font-size: 1.1rem;
     }
 
     footer {
@@ -123,69 +106,99 @@
 <nav>
   <div><b>LordLOLQDH</b></div>
   <div>
+    <a href="#about">Über uns</a>
     <a href="#projects">Projekte</a>
-    <a href="#team">Team</a>
     <a href="#contact">Kontakt</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-  <h1>Willkommen in unserer Organisation</h1>
-  <p>Saubere Projekte. Klare Struktur. Moderne Entwicklung.</p>
-  <button class="btn" onclick="document.getElementById('projects').scrollIntoView()">Los geht's</button>
+  <h1>LordLOLQDH Organisation</h1>
+  <p>
+    Eine moderne Entwicklerorganisation mit Fokus auf saubere Software,
+    klare Struktur und nachhaltige Projekte.
+  </p>
+  <a class="btn" href="https://github.com/LordLOLQDH" target="_blank">
+    GitHub Organisation öffnen
+  </a>
 </div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>📌 Über die Organisation</h2>
+
+  <div class="card">
+    <p>
+      Die <b>LordLOLQDH Organisation</b> ist eine kleine, unabhängige Entwicklergruppe,
+      die sich auf moderne Softwareentwicklung, sauberen Code und gut strukturierte Projekte konzentriert.
+      Unser Ziel ist es, nicht einfach nur Code zu schreiben, sondern stabile, verständliche und langfristig wartbare Systeme zu entwickeln.
+    </p>
+
+    <p>
+      Wir arbeiten projektbasiert und legen großen Wert auf klare Architektur, einfache Zusammenarbeit und nachvollziehbare Entwicklungsprozesse.
+      Jedes Projekt in unserer Organisation folgt denselben Grundprinzipien: Übersichtlichkeit, Effizienz und Erweiterbarkeit.
+    </p>
+
+    <p>
+      Dabei ist es egal, ob es sich um Webanwendungen, Backend-Systeme oder kleine Tools handelt – jedes Projekt soll einen echten Zweck erfüllen
+      und einen Mehrwert bieten. Besonders wichtig ist uns, dass auch Anfänger verstehen können, wie unsere Projekte aufgebaut sind.
+    </p>
+
+    <p>
+      Die Organisation wächst stetig weiter. Neue Ideen, neue Mitglieder und neue Technologien werden regelmäßig integriert.
+      Ziel ist es, eine langfristige Entwicklungsumgebung aufzubauen, die sowohl Lernplattform als auch Produktionsumgebung sein kann.
+    </p>
+  </div>
+</section>
 
 <!-- PROJECTS -->
 <section id="projects">
   <h2>🚀 Projekte</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Frontend Web</h3>
-      <p>Moderne Web Interfaces und UI Systeme.</p>
-    </div>
 
-    <div class="card">
-      <h3>Backend API</h3>
-      <p>Sichere und schnelle Server Systeme.</p>
-    </div>
+  <div class="card">
+    <p>
+      Unsere Projekte sind in verschiedene Bereiche aufgeteilt, um Übersicht und Struktur zu behalten:
+    </p>
 
-    <div class="card">
-      <h3>Tools</h3>
-      <p>Automatisierung und Entwickler Tools.</p>
-    </div>
-  </div>
-</section>
+    <ul>
+      <li><b>Frontend Systeme</b> – moderne Benutzeroberflächen und Webdesigns</li>
+      <li><b>Backend APIs</b> – stabile Server- und Datenstrukturen</li>
+      <li><b>Tools & Utilities</b> – kleine Programme zur Automatisierung</li>
+    </ul>
 
-<!-- TEAM -->
-<section id="team">
-  <h2>👥 Team</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Developer</h3>
-      <p>Code, Features, Systeme.</p>
-    </div>
+    <p>
+      Jedes Projekt wird in klaren Repositories verwaltet und mit einer einheitlichen Struktur aufgebaut.
+      Dadurch bleibt die Organisation auch bei wachsender Größe übersichtlich und wartbar.
+    </p>
 
-    <div class="card">
-      <h3>Designer</h3>
-      <p>UI/UX und visuelle Gestaltung.</p>
-    </div>
-
-    <div class="card">
-      <h3>Maintainer</h3>
-      <p>Qualität und Struktur im Projekt.</p>
-    </div>
+    <p>
+      Du kannst alle aktuellen Projekte direkt auf unserer GitHub-Organisation einsehen:
+      <br><br>
+      👉 <a href="https://github.com/LordLOLQDH" target="_blank">github.com/LordLOLQDH</a>
+    </p>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <h2>📩 Kontakt</h2>
-  <div class="contact">
-    <p>Für Anfragen:</p>
-    <a href="mailto:auron-team@proton.me">
-      auron-team@proton.me
-    </a>
+
+  <div class="card">
+    <p>
+      Wenn du Fragen, Vorschläge oder Interesse an einer Zusammenarbeit hast,
+      kannst du uns jederzeit kontaktieren.
+    </p>
+
+    <p>
+      📧 E-Mail:
+      <a href="mailto:auron-team@proton.me">auron-team@proton.me</a>
+    </p>
+
+    <p>
+      Wir antworten in der Regel zeitnah und sind offen für neue Ideen,
+      Kooperationen und Verbesserungen an bestehenden Projekten.
+    </p>
   </div>
 </section>
 
